@@ -1,3 +1,7 @@
+/* create an odd pointer at head , an even pointer at head.next, and a copy of even head 
+Then, odd always moves to another odd index by odd.next.next. same case with even.
+at the end, the last odd node points to the even head (which we made at the beginning).
+*/
 /**
  * Definition for singly-linked list.
  * public class ListNode {
