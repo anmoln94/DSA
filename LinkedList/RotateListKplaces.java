@@ -1,3 +1,6 @@
+/*Figure out how many rounds to move. Assign tail next to head. Calculate how much to rotate (k%length). Move tail length-k times.
+Head becomes tail.next. then tail.next becomes null*/
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
