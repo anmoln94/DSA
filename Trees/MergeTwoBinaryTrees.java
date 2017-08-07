@@ -1,3 +1,7 @@
+/*At every node create a new node that will have a value = sum of the values of corresponding nodes in first tree + second tree.
+Then recursively traverse both trees simulataneously. */
+*
+*/
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
