@@ -1,3 +1,12 @@
+/*
+Create two pointers fast and slow
+Move fast 2x speed of slow
+When fast hits null, slow will be at the middle of the list
+Create a node using slow
+Recursively assign left to toBST(head,slow) which will be less than slow
+Recursively assign right to toBST(slow.next,tail) which will be greater than slow
+*/
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
