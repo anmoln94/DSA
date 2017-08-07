@@ -1,3 +1,7 @@
+/* keep a previous pointer(initially null), and current pointer(intially head)
+Base Case check at every iteration: if head is to be deleted, change head to current.next
+Otheriwse: prev.next = current.next*/
+*/
 /**
  * Definition for singly-linked list.
  * public class ListNode {
