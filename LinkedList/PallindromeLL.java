@@ -1,3 +1,5 @@
+/*make a copy of head. push full linkedlist into stack. then iterate linkedlist and pop simulatenously and check.
+if it is not same at any time check if stacks is empty. If it is not return false */
 /**
  * Definition for singly-linked list.
  * public class ListNode {
