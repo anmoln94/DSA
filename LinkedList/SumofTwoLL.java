@@ -1,3 +1,8 @@
+/*Create a dummy node called prev which is initially null so while returning 
+ * we will return head.next 
+ * Then while either of the lists is empty or carry exists do the calculations.
+ * iterate through the lists if a next exists
+ */
 /**
  * Definition for singly-linked list.
  * public class ListNode {

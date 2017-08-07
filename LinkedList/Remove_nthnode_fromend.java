@@ -1,3 +1,8 @@
+/*Create two pointers fast and slow. Send fast pointer to n positions from front
+ * and then move both pointers together till fast reaches end.
+ * 
+ */
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

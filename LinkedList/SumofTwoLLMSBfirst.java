@@ -1,3 +1,10 @@
+/*Create two stacks for each linked list and push.
+ * iterate thought both stacks popping each time
+ * the prev will hold the remainder
+ * create a current node whose next is previous with value of carry
+ * 
+ * At the last operation if carry was 0, then return prev.next else return prev
+ */
 /**
  * Definition for singly-linked list.
  * public class ListNode {

@@ -1,3 +1,6 @@
+/*If the next nodes value is same as current nodes value, current next becomes next's next
+
+ */
 /**
  * Definition for singly-linked list.
  * public class ListNode {

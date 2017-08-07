@@ -1,3 +1,6 @@
+//Assign current node as prev, and newhead as current node's next. 
+//Initially prev is set to null
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
