@@ -1,3 +1,4 @@
+package BST;
 /*recursively find all paths(sums) from root to leaf. 
  * Calculate left sum and right sum for each node, and return the smaller
  * of the two back to the parent.
