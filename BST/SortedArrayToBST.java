@@ -1,3 +1,7 @@
+/* Create a tree with root as the middle element of array. 
+Recursively split the array into left child(low to mid-1) and right child(mid+1,high).
+*/
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
