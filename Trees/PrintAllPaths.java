@@ -1,3 +1,8 @@
+/*At each recursive call, at the root.val to the path string. 
+If both left and child are null, print the path.
+*/
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -7,29 +12,21 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
+public class Solution 
+{
     public List<String> binaryTreePaths(TreeNode root) 
     {
-       List<String> list = new ArrayList<String>();
-       rec(root,list,"",true);        
-       return list;
+        if (root != null) 
+            searchBT(root, "");
+        return answer;
     }
-    
-    void rec(TreeNode root,List<String> ls,String s,boolean f)
+    private void searchBT(TreeNode root, String path) 
     {
-        if(root!=null)
-        {
-            if(f==true)
-                s+=root.val;
-            else
-                s+="->"+root.val;
-            if(root.left!=null)
-                rec(root.left,ls,s,false);
-            if(root.right!=null)
-                rec(root.right,ls,s,false);
-            if(root.left==null && root.right==null)
-                ls.add(s);
-        }
+        if (root.left == null && root.right == null) 
+            System.out.println(path);
+        if (root.left != null) 
+            searchBT(root.left, path + root.val + "->", answer);
+        if (root.right != null) 
+            searchBT(root.right, path + root.val + "->", answer);
     }
-    
 }
