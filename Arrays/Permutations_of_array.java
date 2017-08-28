@@ -1,6 +1,7 @@
 /*Given an array generate all permutations of it.
  * Do it recursively (generate all, then backtrack, change one number, again generate all ...)
  * We have a for loop, so that we can use all elements of the array.
+ * Note the array has no duplicates.
  */
 class Solution 
 {
