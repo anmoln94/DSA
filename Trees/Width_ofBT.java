@@ -1,5 +1,5 @@
 //Left childs index is 2*parent, right childs index is 2*parent+1 when stored in array. Only store leftmost
-//child index at each level and find max width.
+//child index at each level and find max width. At each depth, there will be many width candidates whose width will be current index - leftmost index
 class Solution {
     public int widthOfBinaryTree(TreeNode root) {
         List<Integer> lefts = new ArrayList<Integer>(); // left most nodes at each level;
