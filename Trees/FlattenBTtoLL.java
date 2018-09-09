@@ -18,18 +18,23 @@ The flattened tree should look like:
 
  */
 public void flatten(TreeNode root) {
-        if (root == null) return;
-        
-        TreeNode left = root.left;
-        TreeNode right = root.right;
-        
-        root.left = null;
-        
-        flatten(left);
-        flatten(right);
-        
-        root.right = left;
-        TreeNode cur = root;
-        while (cur.right != null) cur = cur.right;
-        cur.right = right;
+        Stack<TreeNode> stack = new Stack<TreeNode>();
+        TreeNode p = root;
+ 
+        while(p != null || !stack.empty()){
+ 
+            if(p.right != null){
+                stack.push(p.right);
+            }
+ 
+            if(p.left != null){
+                p.right = p.left;
+                p.left = null;
+            }else if(!stack.empty()){
+                TreeNode temp = stack.pop();
+                p.right=temp;
+            }
+ 
+            p = p.right;
+        }
     }
