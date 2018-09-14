@@ -1,3 +1,10 @@
+/*     1 -> NULL
+   /  \
+  2 -> 3 -> NULL
+ / \  / \
+4->5->6->7 -> NULL
+*/
+
 public class Solution {
     public void connect(TreeLinkNode root) {
         if(root == null || root.left == null) return;
